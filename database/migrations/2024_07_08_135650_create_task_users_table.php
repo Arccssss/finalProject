@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('task__users', function (Blueprint $table) {
+        Schema::create('task_users', function (Blueprint $table) {
             $table->id();
             $table->string('username')->unique();
             $table->string('password');
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('task__users');
+        Schema::dropIfExists('task_users');
     }
 };

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\TaskAdminResource\Pages;
+namespace App\Filament\Resources\AdminResource\Pages;
 
-use App\Filament\Resources\TaskAdminResource;
+use App\Filament\Resources\AdminResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditTaskAdmin extends EditRecord
+class EditAdmin extends EditRecord
 {
-    protected static string $resource = TaskAdminResource::class;
+    protected static string $resource = AdminResource::class;
 
     protected function getHeaderActions(): array
     {
