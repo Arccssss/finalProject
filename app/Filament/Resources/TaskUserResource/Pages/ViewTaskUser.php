@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\AdminResource\Pages;
+namespace App\Filament\Resources\TaskUserResource\Pages;
 
-use App\Filament\Resources\AdminResource;
+use App\Filament\Resources\TaskUserResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ViewRecord;
 
-class ViewAdmin extends ViewRecord
+class ViewTaskUser extends ViewRecord
 {
-    protected static string $resource = AdminResource::class;
+    protected static string $resource = TaskUserResource::class;
 
     protected function getHeaderActions(): array
     {

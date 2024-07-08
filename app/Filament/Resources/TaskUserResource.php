@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\AdminResource\Pages;
-use App\Filament\Resources\AdminResource\RelationManagers;
-use App\Models\Admin;
+use App\Filament\Resources\TaskUserResource\Pages;
+use App\Filament\Resources\TaskUserResource\RelationManagers;
+use App\Models\TaskUser;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class AdminResource extends Resource
+class TaskUserResource extends Resource
 {
-    protected static ?string $model = Admin::class;
+    protected static ?string $model = TaskUser::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -57,10 +57,10 @@ class AdminResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListAdmins::route('/'),
-            'create' => Pages\CreateAdmin::route('/create'),
-            'view' => Pages\ViewAdmin::route('/{record}'),
-            'edit' => Pages\EditAdmin::route('/{record}/edit'),
+            'index' => Pages\ListTaskUsers::route('/'),
+            'create' => Pages\CreateTaskUser::route('/create'),
+            'view' => Pages\ViewTaskUser::route('/{record}'),
+            'edit' => Pages\EditTaskUser::route('/{record}/edit'),
         ];
     }
 }
