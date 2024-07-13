@@ -9,6 +9,8 @@ class Task extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['task','points','deadline','description'];
+
     public function setUsername($value) {
         parent::__set('foo', $value);
         return $this;

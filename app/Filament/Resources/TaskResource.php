@@ -23,13 +23,10 @@ class TaskResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('username')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('fullname')
-                    ->required()
-                    ->maxLength(255),
                 Forms\Components\TextInput::make('task')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('points')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\Textarea::make('description')
